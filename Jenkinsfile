@@ -46,8 +46,8 @@ pipeline {
                 sshagent(credentials: ['ssh-credential-id']) {
                     sh '''
                         mkdir -p ~/.ssh
-                        ssh-keyscan -H 54.176.59.103 >> ~/.ssh/known_hosts
-                        scp -r dist/* ubuntu@54.176.59.103:/tmp/react-app
+                        ssh-keyscan -H 18.144.26.3 >> ~/.ssh/known_hosts
+                        scp -r dist/* ubuntu@18.144.26.3:/tmp/react-app
                         
                         ssh -o StrictHostKeyChecking=no ubuntu@13.60.188.199 "
                             sudo apt update && sudo apt upgrade -y
