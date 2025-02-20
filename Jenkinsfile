@@ -49,7 +49,7 @@ pipeline {
                         ssh-keyscan -H 18.144.26.3 >> ~/.ssh/known_hosts
                         scp -r dist/* ubuntu@18.144.26.3:/tmp/react-app
                         
-                        ssh -o StrictHostKeyChecking=no ubuntu@13.60.188.199 "
+                        ssh -o StrictHostKeyChecking=no ubuntu@18.144.26.3 "
                             sudo apt update && sudo apt upgrade -y
                             echo "Successful Cache Update"
                             sudo apt install nginx -y
