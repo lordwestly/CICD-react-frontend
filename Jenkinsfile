@@ -12,7 +12,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'jenkins', url: 'https://github.com/soundn/CICD-react-frontend.git'
+                git branch: 'jenkins', url: 'https://github.com/lordwestly/CICD-react-frontend.git'
             }
         }
         
